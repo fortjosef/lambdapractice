@@ -12,7 +12,7 @@ Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: HelloWorldFunction
+      CodeUri: s3://learning-lambda-first-sam-project666/0f524d373865997e8cbbf1e76fb73558
       Handler: app.lambdaHandler
       Runtime: nodejs10.x
       Events:
@@ -24,7 +24,7 @@ Resources:
   ClockFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: ClockFunction
+      CodeUri: s3://learning-lambda-first-sam-project666/4bab94553ebdadee92adfa8be5d71566
       Handler: handler.clock
       Runtime: nodejs10.x
       Events:
@@ -36,7 +36,7 @@ Resources:
   TimeZoneFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: TimeZoneFunction
+      CodeUri: s3://learning-lambda-first-sam-project666/79769ae22fa642c080821e36057c3d33
       Handler: handler.timeForTimezone
       Runtime: nodejs10.x
       Events:

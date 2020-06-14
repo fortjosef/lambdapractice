@@ -5,8 +5,8 @@ exports.clock = async (event) => {
     const message = moment().format();
     
     const response = {
-        SatusCode: 200,
-        Body: JSON.stringify(message);
+        StatusCode: 200,
+        Body: JSON.stringify(message)
     };
     
     return response;
